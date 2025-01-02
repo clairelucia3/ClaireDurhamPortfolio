@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <style>
+            body {
+                font-family: georgia
+            }
+        
+            .navbar-brand {
+                font-family: Georgia;
+                padding-left: 10px; 
+                letter-spacing: 5px;
+            }
+            #btnpaintings {
+                background-color:#ffd4dc;
+                transition-duration:0.5s;
+                transition-property: inherit;
+                font-size:medium;
+            }
+            #btnpaintings:hover {
+                color:white;
+                background-color:brown;
+                font-size:larger
+            }
+            #btngraphics {
+                background-color:#ffd4dc;
+                transition-duration:0.5s;
+                transition-property: inherit;
+                font-size:medium;
+            }
+            #btngraphics:hover {
+                color:white;
+                background-color:brown;
+                font-size:larger
+            }
+            #btnchristmas {
+                background-color:#ffd4dc;
+                transition-duration:0.5s;
+                transition-property: inherit;
+                font-size:medium;
+            }
+            #btnchristmas:hover {
+                color:white;
+                background-color:brown;
+                font-size:larger
+            }
+            #btn30{
+                background-color: #ffd4dc;
+                transition-property:inherit;
+                transition-duration:0.5s;
+                font-size:medium
+            }
+            #btn30:hover {
+                background-color: brown;
+                font-size:larger;
+                color:white
+            }
+            #footer{
+                text-align: center}
+            #btn6:hover{
+                width:100%;
+                font-size:larger;
+                background-color:#ffd4dc;
+                font-size: larger}
+            
+            #btn6{
+                width:100%;
+                background-color:#ffd4dc;
+                color:black;
+                transition-property:inherit;
+                transition-duration: 0.5s;
+                text-align:center;
+                font-size:medium;}
+            #btn7:hover {
+                color:white;
+                font-size:larger;
+            }
+            #btn7{
+                color:white;
+                transition-property:inherit;
+                transition-duration: 0.5s;
+            }
+            #btn8:hover {
+                color:white;
+                font-size:larger;
+            }
+            #btn8{
+                color:white;
+                transition-property:inherit;
+                transition-duration: 0.5s;
+            }
+            #btn9:hover {
+                color:white;
+                font-size:larger;
+            }
+            #btn9{
+                color:white;
+                transition-property:inherit;
+                transition-duration: 0.5s;
+            }
+             #end{
+                color:white;
+                padding:50px;
+                background-color:#8c143c
+            }
+        </style>
+    </head>
+    <body>
+    
+    <nav class="navbar sticky-top bg-danger-subtle navbar-light navbar-expand-xlg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"
+                    ><img class="img-fluid object-fit-cover" src="logo.png" alt="logo" width="75px"/></a>
+                <a class="navbar-brand" href="index.html">Claire Durham</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="1" id="offcanvasNavbar" arialabelledby="offcanvasNavbarLabel">
+                   <div class="offcanvas-header">
+                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                       <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" aria-current="page" href="index.html"><h3>Home</h3> </a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a
+                                class="nav-link"
+                                href="Gallery-Painting.html"
+                                aria-expanded="false"
+                                ><h3>Portflio</h3></a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link active" href="Contact.html"><h3>Contact</h3> </a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="AboutMe.html"><h3>About Me</h3> </a>
+                        </li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+    <br/>
+        <div class="text-center"><h1>Let's do this thing!</h1></div>
+    <br/>
+        
+        <div class="card text-center mb-3" style="width:100%;">
+  <div class="card-body">
+    <h5 class="card-title">Custom Paintings</h5>
+    <p class="card-text">Fill out this short questionere in the link below.</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdGH2KeJ1Aba9JC0GiJOwtjnepkdB--RTFHrm7o3Q9yNj1JBg/viewform?usp=header" class="btn btn-danger-subtle" id="btnpaintings">Google Form</a>
+  </div>
+</div>
+
+<div class="card text-center mb-3" style="width:100%;">
+  <div class="card-body">
+    <h5 class="card-title">Logos and Graphics</h5>
+    <p class="card-text">Fill out this short questionere in the link below.</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeShIbk5r0q_jUi7FOPYfJRDe3lyJUCiMuyST_mTdbNdbK5Fw/viewform?usp=header" class="btn btn-danger-subtle" id="btngraphics">Google Form</a>
+  </div>
+</div>
+
+<div class="card text-center" style="width:100%;">
+  <div class="card-body">
+    <h5 class="card-title">Christmas Cards</h5>
+    <p class="card-text">Fill out this short questionere in the link below.</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVuzlMf10y6cWjCXuERTYXBEZrBF05yrRtzEfQlE3f9t_pIw/viewform?usp=header" class="btn btn-danger-subtle" id="btnchristmas">Google Form</a>
+  </div>
+</div>
+        <br/>
+         <div class="modal fade" id="ModalResume" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img class="im-fluid object-fit-cover" src="Resume.png" alt="text"  width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+        <br/>
+        <div class="text-center"><a href="" class="btn" style="width:50%" data-bs-toggle="modal" data-bs-target="#ModalResume" id="btn30"> My Resume</a></div>
+        <br/>
+        <div class="text-center"><h1>Thank you!</h1></div>
+         <br/> <br/>
+       
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col" id="footer">
+                    <a class ="btn" href="Contact.html" role="button" id="btn6">Let's Work Together</a>
+                </div> </div>
+                <div class="row" id="end">
+                    <div class="col-6">Claire Durham</div>
+                    <div class="col-2"><a class ="btn" href="https://www.instagram.com/creating_claire_/" role="button" id="btn7">Insta</a></div>
+                    <div class="col-2"><a class ="btn" href="Contact.html" role="button" id="btn8">Contact</a></div>
+                    <div class="col-2"><a class ="btn" href="Gallery-Painting.html" role="button" id="btn9">Gallery</a></div>
+                </div></div>
+    
+   </body>
+   
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
