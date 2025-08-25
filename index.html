@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="https://use.typekit.net/xbk4dlc.css">
+        
+        <style>
+            body {
+                font-family: Cubano;
+            }
+            .navbar {
+                background-color: #2f45b2;
+            }
+            .offcanvas{
+                background-color: #e5c526}
+            #Gallery{
+                width: 100%;
+                color: white;
+                transition-property: inherit;
+                transition-duration: 0.5s;
+            }
+            #btn6 {
+                background-color:black;
+                color: white;
+                text-align: center;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                width: 100%;
+                transition-property: inherit;
+                transition-duration: 0.5s;
+            }
+            #Gallery:hover, #btn6:hover {
+                letter-spacing: 5px;
+            }
+           
+             .image-container1 {
+                background-image: url(backgroundimage1.png);
+                background-size: cover;
+                background-position: right top;
+                background-position:fixed;
+                max-height: 1000px;
+            }
+            .image-container2 {
+                background-image: url(backgroundimage2.png);
+                background-size: cover;
+                background-position: right bottom;
+                background-position:fixed;
+                min-height: fit-content;
+            }
+            
+            .overlay-text {
+                z-index: 1;
+                color:white
+            }
+            
+            #Title1:hover, #Title2:hover, #Title3:hover, #Title4:hover, #Instagram:hover, #TikTok:hover, #Resume:hover, #Contact:hover       {
+                transform: rotate(10deg);
+                text-align: center;
+            }
+           
+            #Title1, #Title2, #Title3, #Title4, #Instagram, #TikTok, #Resume, #Contact {
+                background-color: #ff4236;
+                text-align: center;
+                width: 100%;
+                transition-property: inherit;
+                transition-duration: 0.5s;
+            }
+            
+            
+            @media screen and (min-width: 501px) {
+                #saying, #loop, #Gallery, #surface {
+                    font-size: 70px;
+                }
+            }
+            @media screen and (max-width: 500px) {
+                #saying, #loop, #Gallery, #surface {
+                    font-size: 70px;
+                }
+            }
+            @media screen and (min-width: 501px) {
+                #Title1, #Title2, #Title3, #Title4, #Instagram, #TikTok, #Resume, #Contact, #bottom {
+                    font-size: 30px;
+                }
+            }
+            @media screen and (max-width: 500px) {
+                #Title1, #Title2, #Title3, #Title4, #Instagram, #TikTok, #Resume, #Contact, #bottom {
+                    font-size: 50px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar sticky-top navbar-dark navbar-expand-xlg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"
+                    ><img class="img-fluid object-fit-cover" src="logo.png" alt="logo" width="75px"
+                /></a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="offcanvas offcanvas-end"
+                    tabindex="1"
+                    id="offcanvasNavbar"
+                    arialabelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item mx-4">
+                                <a class="nav-link active" aria-current="page" href="index.html"><h3>Home</h3> </a>
+                            </li>
+                            <li class="nav-item mx-4">
+                                <a class="nav-link" href="Gallery-Painting.html" aria-expanded="false"
+                                    ><h3>Gallery</h3></a
+                                >
+                            </li>
+                            <li class="nav-item mx-4">
+                                <a class="nav-link" href="AboutMe.html"><h3>Contact</h3> </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="containter-fluid p-5">
+            <div class="row align-items-center">
+                <div class="col-xs-12 col-sm-6 col-md-6 text-center gy-5">
+                    <img src="homepagepic.png" alt="Portrait" style="width: 100%" />
+                </div>
+                <div class="col gy-5 gx-5">
+                    <h1 id="saying"><b>Hello, my name is Claire Durham.</b></h1>
+                    
+                    <div class="row">
+                        <div class="col gy-5"><a href="AboutMe.html" class="btn" id="Title1">Graphic Design</a>
+                        </div>
+                        
+                        <div class="col gy-5"><a href="AboutMe.html" class="btn" id="Title2">UX/UI Design</a>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="row">
+                        <div class="col gy-5"><a href="AboutMe.html" class="btn" id="Title3">Social Media</a>
+                        </div>
+                        <div class="col gy-5"><a href="AboutMe.html" class="btn" id="Title4">Fine Arts</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            
+                <div class="row justify-content-center">
+                    <div class="col text-center g-5">
+                    <a href="Gallery-Painting.html" class="btn btn-dark" id="Gallery">Gallery</a>
+                    </div>
+                </div>
+        </div>
+        
+    <div class="image-container1">
+        <div class="overlay-text text-dark">
+          <div class=container-fluid>
+            <div class="col p-5">
+                <div class="row"><p class="text-content"><h1 id="surface">Below the Surface...</h1>
+                </div>
+                <div class="row"><p class="text-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+                </div><br/>
+             </div>
+            </div>
+        </div>
+     </div>
+                  <br/> <br/>
+                  
+    <div class="image-container2">
+        <div class="overlay-text text-dark">
+          <div class=container-fluid>
+              <div class="col-sm-12 col-md-8 p-5">
+                <div class="row">
+                    <h1 id="loop"><b>Stay in the Loop...</b></h1>
+                    
+                    <div class="row">
+                        <div class="col gy-5"><a href="AboutMe.html" class="btn btn-light" id="Instagram">Instagram</a>
+                        </div>
+                        
+                        <div class="col gy-5"><a href="AboutMe.html" class="btn btn-light" id="TikTok">TikTok</a>
+                        </div>
+                    </div>
+                
+    
+                    <div class="row">
+                        <div class="col gy-5"><a href="AboutMe.html" class="btn btn-light" id="Resume">Resume</a>
+                        </div>
+                        <div class="col gy-5"><a href="AboutMe.html" class="btn btn-light" id="Contact">Contact</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+        
+
+        <br /> <br />
+            
+        
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col" id="btn6">
+                    <a class="btn text-light" href="AboutMe.html" id="bottom">Let's Work Together</a>
+                </div></div></div>
+        
+    </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
