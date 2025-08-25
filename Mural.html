@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous" />
+        <style>
+            
+             body {
+                font-family: georgia;
+                background-image:url(colors.png);
+                background-attachment:fixed;
+                background-repeat: no-repeat;
+                 background-size: cover;}
+            
+            .navbar {
+                background-color: #001524;
+            }
+            .offcanvas{
+                background-color: #001524}
+
+            .navbar-brand {
+                font-family: Georgia;
+                padding-left: 10px;
+                letter-spacing: 5px;
+            }
+            .card {
+                margin-top:100px;
+                margin-bottom:100px;
+                padding:20px;
+                background-color:white;
+                font-size: 30px;
+            }
+             #StepTwo {
+                background-color:white;
+                padding: 10px;
+                padding-left: 50px;
+                font-size:50px;
+            }
+            #StepThree {
+                background-color:white;
+                padding: 10px;
+                padding-left: 50px;
+                font-size:50px;
+            }
+            #btn6 {
+                background-color: #001524;
+                color: white;
+                text-align: center;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                width: 100%;
+                transition-property: inherit;
+                transition-duration: 0.5s;
+            }
+             #btn6:hover {
+                letter-spacing: 5px;
+                color: white;
+                text-align: center;
+            }
+            #StepOne {
+                background-color:white;
+                padding: 10px;
+                padding-left: 50px;
+                font-size:50px;
+            }
+             @media screen and (max-width: 600px) {
+                #name {
+                    font-size: 0px;
+                }
+            }
+             @media screen and (min-width: 601px) {
+                #name {
+                    font-size: 30px;
+                }
+            }
+            @media screen and (max-width: 649px){
+                .card-title {
+                 font-size: 50px;
+                }
+            }
+            @media screen and (min-width: 650px){
+                .card-title {
+                 font-size: 80px;
+                }
+            }
+            
+            @media screen and (max-width: 600px) {
+                #StepOneTalk {
+                    font-size: 30px;
+                }
+            }
+            @media screen and (min-width: 601px) {
+                #StepOneTalk {
+                    font-size: 20px;
+                }
+            }
+             @media screen and (max-width: 600px) {
+                #StepTwoTalk {
+                    font-size: 30px;
+                }
+            }
+            @media screen and (min-width: 601px) {
+                #StepTwoTalk {
+                    font-size: 20px;
+                }
+            }
+            @media screen and (max-width: 600px) {
+                #StepThreeTalk {
+                    font-size: 30px;
+                }
+            }
+            @media screen and (min-width: 601px) {
+                #StepThreeTalk {
+                    font-size: 20px;
+                }
+            }
+            @media screen and (max-width: 600px) {
+                #bottom {
+                    font-size: 30px;
+                }
+            }
+            @media screen and (min-width: 601px) {
+                #bottom {
+                    font-size: 30px;
+                }
+            }
+            
+    </style>
+    </head>
+    <body>
+ 
+<nav class="navbar sticky-top navbar-dark navbar-expand-xlg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"
+                    ><img class="img-fluid object-fit-cover" src="logo.png" alt="logo" width="75px"
+                /></a>
+                <a class="navbar-brand" id="name" href="index.html">Claire Durham</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="offcanvas offcanvas-end"
+                    tabindex="1"
+                    id="offcanvasNavbar"
+                    arialabelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item mx-4">
+                                <a class="nav-link active" aria-current="page" href="index.html"><h3>Home</h3> </a>
+                            </li>
+                            <li class="nav-item mx-4">
+                                <a class="nav-link" href="Gallery-Painting.html" aria-expanded="false"
+                                    ><h3>Gallery</h3></a
+                                >
+                            </li>
+                            <li class="nav-item mx-4">
+                                <a class="nav-link" href="AboutMe.html"><h3>Contact</h3> </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid" id="card">
+        <div class= "row justify-content-center">
+            <div class="col-sm-8 col-xl-6">
+        <div class="card text-center">
+  <div class="card-body">
+    <h5 class="card-title">Sunflower Mural</h5>
+    <p class="card-text"> I was asked to bring the side of this barn to life with a beautiful and vibrant mural of sunflowers. </p>
+  </div></div></div></div>
+            <div class="row bg-black bg-opacity-50 justify-content-center">
+             <div class="col-8"><img src="CarouselSunflowers.png" width="100%"></div></div></div>
+        
+
+             <div class="container-fluid p-0">
+            <div class="row justify-content-center bg-white">
+                <div class="col-lg-6 col-md-8 col-sm-12" id="StepOne">Step One: Sketches and Planning
+                    <div class="col" id="StepOneTalk"> The clients knew that they wanted the mural to include large sunflowers that were vibrant and stuck out. From there, I started met with them to decide on colors and style.
+                    </div></div>
+                <div class="col"><img src="sunflowersketch.jpg"  width="100%"> </div></div>
+            <div class="row justify-content-center bg-white">
+                <div class="col-lg-6 col-md-8 col-sm-12" id="StepTwo">Step Two: Sketch and prepare the canvas!
+                <div class="col" id="StepTwoTalk">Next I used soap and water to ensure that the surface was clean and that the paint would stick to the siding. Once that is done, then I can begin to sketch out the composition with chalk. </div></div>
+                <div class="col"> <img src="sunflowerchalkl%20copy.png"  width="100%"></div></div>
+            <div class="row justify-content-center">
+                    <div class="col" id="StepThree">Step Three: Get to Work!
+                <div class="col" id="StepThreeTalk">First I began color blocking. I mixed my paint together to achieve the colors I wanted first. From there, I began to paint. </div></div>
+                </div>
+                 <div class="row bg-white justify-content-around">
+                    <div class="col-sm-12 col-md-6 col-lg-4"> <img src="sunflowerprocess.png"  width="100%"> <img src="sunflowerselfie.jpg"  width="100%"></div>
+                    <div class="col-sm-12 col-lg-8"> <img src="Sunflower.png"  width="100%"></div>
+                 </div></div>
+        
+ <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col" id="btn6">
+                    <a class="btn text-light" href="AboutMe.html" id="bottom">Let's Work Together</a>
+                </div>
+            </div>
+           
+        </div>
+    </body>
+</html>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
