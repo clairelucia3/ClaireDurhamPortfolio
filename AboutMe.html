@@ -1,32 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Portfolio</title>
         <link rel="stylesheet" href="style.css" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="https://use.typekit.net/xbk4dlc.css">
+        
         <style>
             body {
-                font-family: georgia
+                font-family: Cubano;
             }
-        .navbar {
-                background-color: #001524;
+            .navbar {
+                background-color: #2f45b2;
             }
             .offcanvas{
-                background-color: #001524}
-
-            .navbar-brand {
-                font-family: Georgia;
-                padding-left: 10px;
-                letter-spacing: 5px;}
+                background-color: #e5c526}
+            #btn1, #btn2, #btn3, .btn4 {
+                background-color:#e5c526;
+                width: 100%;
+                text-align: center;
+                transition-property: inherit;
+                transition-duration: 0.5s;
+            }
+            #btn1:hover, #btn2:hover, #btn3:hover{
+                transform: rotate(10deg);
+                text-align: center;
+            }
             #btn6:hover {
                 letter-spacing: 5px;
                 color: white;
                 text-align: center;
             }
-
             #btn6 {
-                background-color: #001524;
+                background-color:black;
                 color: white;
                 text-align: center;
                 padding-top: 30px;
@@ -35,191 +44,59 @@
                 transition-property: inherit;
                 transition-duration: 0.5s;
             }
-           #btn7 {
-                transition-property: inherit;
-                transition-duration: 0.5s;
+            #MamaMirs {
+                color: white;
+                background-color:#5d7dff
             }
-            #btn7:hover {letter-spacing: 5px
-            }
-            #footer {
-                color: white;}
-            #resume{
-                width:80%;
-                transition-property:inherit;
-                transition-duration:0.5s;
-                color:white
-            }
-           
-            #resume:hover {
-                letter-spacing: 5px
-            }
-            #instagram{
-                width:80%;
-                transition-property:inherit;
-                transition-duration:0.5s;
-                color:white
-            }
-             #instagram:hover {
-                letter-spacing: 5px
-            }
-                        
-            #btnpaintings {
-                background-color:#a52a7a75;
-                transition-duration:0.5s;
-                transition-property: inherit;
-                font-size:medium;
-            }
-            #btnpaintings:hover {
-                color:white;
-                background-color:#a52a54;
-                letter-spacing: 5px
-            }
-            #btngraphics {
-                background-color:#a52a7a75;
-                transition-duration:0.5s;
-                transition-property: inherit;
-                font-size:medium;
-            }
-            #btngraphics:hover {
-                color:white;
-                background-color:#a52a54;
-                letter-spacing: 5px
-            }
-            #btnchristmas {
-                background-color:#a52a7a75;
-                transition-duration:0.5s;
-                transition-property: inherit;
-                font-size:medium;
-            }
-            #btnchristmas:hover {
-                color:white;
-                background-color:#a52a54;
-                letter-spacing: 5px
-            }
-            @media screen and (max-width: 600px) {
-                #name {
-                    font-size: 0px;}}
-            @media screen and (min-width: 601px) {
-                #name {
-                    font-size: 30px;
+            @media screen and (min-width: 501px) {
+                #Gallery {
+                    font-size: 130px;
                 }
             }
-              @media screen and (max-width: 600px) {
-                #bottom {
-                    font-size: 40px;}
-            }
-           @media screen and (min-width: 601px) {
-                #bottom {
-                    font-size: 30px;
-                }
-            }
-            @media screen and (max-width: 600px) {
-                #aboutintro {
-                    font-size: 50px;
+            @media screen and (max-width: 500px) {
+                #Gallery {
+                    font-size: 90px;
                 }
             }
             @media screen and (min-width: 601px) {
-                #aboutintro {
-                    font-size: 40px;
-                }}
-            @media screen and (max-width: 750px) {
-                #about {
-                    font-size: 30px;
-                }
-            }
-            @media screen and (min-width: 751px) {
-                #about {
-                    font-size: 20px;
-                }}
-            @media screen and (max-width: 600px) {
-                #header {
-                    font-size: 40px;
-                }
-            }
-           @media screen and (min-width: 601px) {
-                #header{
-                    font-size: 50px;
+                .title, #btn1, #btn2, #btn3{
+                    font-size: 50px; 
                 }
             }
             @media screen and (max-width: 600px) {
-                #instagram {
-                    font-size: 40px;
+                .title, #btn1, #btn2, #btn3 {
+                    font-size: 70px;
                 }
             }
-           @media screen and (min-width: 601px) {
-                #instagram{
-                    font-size: 50px;
+             @media screen and (min-width: 1201px) {
+                .btn4 {
+                    font-size: 50px; 
                 }
             }
-          
-             @media screen and (max-width: 600px) {
-                #resume {
-                    font-size: 40px;
-                }
-            }
-           @media screen and (min-width: 601px) {
-                #resume{
-                    font-size: 50px;
-                }
-            }
-            @media screen and (max-width: 750px) {
-                .card-body {
-                    font-size: 30px;
-                }
-            }
-            @media screen and (min-width: 751px) {
-                .card-body {
-                    font-size: 20px;
-                }}
-            @media screen and (max-width: 600px) {
-                #btnpaintings {
-                    font-size: 40px;
-                }
-            }
-           @media screen and (min-width: 601px) {
-                #btnpaintings{
-                    font-size: 30px;
+             @media screen and (max-width: 1200px) {
+                .btn4 {
+                    font-size: 30px; 
                 }
             }
             @media screen and (max-width: 600px) {
-                #btngraphics {
+                #bottom, .saying {
                     font-size: 40px;
                 }
             }
-           @media screen and (min-width: 601px) {
-                #btngraphics{
-                    font-size: 30px;
-                }
-            }@media screen and (max-width: 600px) {
-                #btnchristmas {
-                    font-size: 40px;
-                }
-            }
-           @media screen and (min-width: 601px) {
-                #btnchristmas{
+            @media screen and (min-width: 601px) {
+                #bottom, .saying {
                     font-size: 30px;
                 }
             }
-            @media screen and (max-width: 600px) {
-                .card-title{
-                    font-size: 60px;
-                }
-            }
-           @media screen and (min-width: 601px) {
-                .card-title{
-                    font-size: 60px;
-                }
-            }
-        </style>
+    </style>
     </head>
     <body>
-        
-       <nav class="navbar sticky-top navbar-dark navbar-expand-xlg">
+ 
+<nav class="navbar sticky-top navbar-dark navbar-expand-xlg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"
-                    ><img class="img-fluid object-fit-cover" src="logo.png" alt="logo" width="75px"
+                    ><img class="img-fluid object-fit-cover" src="logo.png" alt="card" width="75px"
                 /></a>
-                <a class="navbar-brand" id="name" href="index.html">Claire Durham</a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -255,69 +132,49 @@
                 </div>
             </div>
         </nav>
-        
-    
-        
-     <br/>
-        <div class="text-center" id="header"><b>Let's do this thing!</b></div>
-        
-        <div class="container-fluid">
-            <div class="row m-3 justify-content-around">
-                <div class="col-sm-12 col-lg-6"><img src="PortfolioCover.png" alt="text" width="100%"></div>
-            <div class="col-sm-12 col-lg-6 my-3" id="aboutintro"><b>Hello, I'm Claire.</b><br/>
-                <div class="col" id="about">I am a dedicated artist and graphic designer with a passion for creating meaningful and visually compelling designs. A 2022 graduate of Napoleon High School, I am currently a third-year student at La Salle University in Philadelphia, far from my small hometown in Northwest Ohio. With a keen eye for detail, I strive to inspire joy and enhance visual communication through my work. As I approach my 2026 graduation, I am eager to embark on the next chapter of my creative journey.
-                    <br/><br/>email: clairelucia3@gmail.com
-                    <div class="row justify-content-center">
-                    <div class="col-sm-12 col-lg-6 my-5"></div><a href="" class="btn bg-danger" data-bs-toggle="modal" data-bs-target="#ModalResume" id="resume"> My Resume</a>
-                <div class="col-sm-12 col-lg-6 my-4"></div><a class="btn text-light bg-danger" href="https://www.instagram.com/creating_claire_/" id="instagram">Instagram</a>
-            </div></div></div></div></div>
-        
-        <br/> <br/>
-         <div class="card text-center mb-3" style="width:100%;">
-  <div class="card-body">
-    <h5 class="card-title">Custom Paintings</h5>
-    <p class="card-text">If interested in commissioning a custom painting, fill out this short questionere in the link below.</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdGH2KeJ1Aba9JC0GiJOwtjnepkdB--RTFHrm7o3Q9yNj1JBg/viewform?usp=header" class="btn text-light" id="btnpaintings">Painting Form</a>
-  </div>
-</div>
 
-<div class="card text-center mb-3" style="width:100%;">
-  <div class="card-body">
-    <h5 class="card-title">Logos and Graphics</h5>
-    <p class="card-text">If interested in some form of digital art, fill out this short questionere in the link below.</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeShIbk5r0q_jUi7FOPYfJRDe3lyJUCiMuyST_mTdbNdbK5Fw/viewform?usp=header" class="btn text-light" id="btngraphics">Digital Art Form</a>
-  </div>
-</div>
-
-<div class="card text-center" style="width:100%;">
-  <div class="card-body">
-    <h5 class="card-title">Holiday Cards</h5>
-    <p class="card-text">If interested in a custom Holiday card, fill out this short questionere in the link below.</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVuzlMf10y6cWjCXuERTYXBEZrBF05yrRtzEfQlE3f9t_pIw/viewform?usp=header" class="btn text-light" id="btnchristmas">Holiday Card Form</a>
-  </div>
-</div>
-       
+    <div class="container-fluid text-center">
+        <div class="row justify-content-center ">
+                <div class="col-12"><h1 id="Gallery">Contact</h1></div>
+                <div class="col-sm-12 col-md-6 col-lg-6"><img src="aboutme.png" width="100%"></div>
+                <div class="col-sm-12 col-md-6 gy-5 "><a href="https://www.instagram.com/creating_claire_/" class="btn" id="btn1">Instagram</a>       
+                    <div class="row">
+                        <div class="col gy-5"><a href="https://www.tiktok.com/@creating_claire_" class="btn" id="btn2">TikTok</a></div>
+                        <div class="col-12 gy-5"><a href="Resume.pdf" class="btn" id="btn3">Resume</a></div>
+                        <div class="col gy-5"><div class="btn4">email: clairelucia3@gmail.com</div></div>
+                    </div>
+                </div>
+         </div>
+        <br/>
+            <div class="row p-5">
+                <div class="col-12 text-start"> <div class="title"> Hello, I'm Claire.
+                    </div></div>
+                 <div class="col text-start"> <div class="saying">I am a senior at La Salle University, studying both Art History and Digital Arts/Multimedia with a distinction in Honors. My diverse set of studies has given me a unique education and understanding of art. History has proven that art imitates life and I think that digital design does not fall short of that. I strive to design logos, content, and websites with my unique education in mind.
+                </div></div>
+            </div>
+        </div>
+        <div class="col-12 text-center"><img src="ContactMe.jpg" width="100%"></div>
         
+        <div class="container-fluid" id="MamaMirs">
+            <div class="row">
+                
+                <div class="col p-5"> <div class="saying"> From branding packages and logos to social media campaigns and content calendars, my process begins with understanding the needs of the audience and the identity of the client. I draw on my background in fine art, working with texture, color, and composition to bring depth and originality to digital design. Whether I’m developing a marketing system for a small business, creating custom graphics, or painting a family portrait, I strive to produce work that is clear, memorable, and adaptable across platforms.
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="container-fluid text-center">
             <div class="row">
                 <div class="col" id="btn6">
                     <a class="btn text-light" href="AboutMe.html" id="bottom">Let's Work Together</a>
-                </div>
-            </div>
-        
-        <div class="modal fade" id="ModalResume" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img class="im-fluid object-fit-cover" src="Resume.png" alt="text"  width="100%">
-      </div>
-    </div>
-  </div>
-</div>
+                </div></div></div>
     
+        
     </body>
-   
 </html>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
