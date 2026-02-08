@@ -10,37 +10,19 @@
         <link rel="stylesheet" href="https://use.typekit.net/xbk4dlc.css">
         
         <style>
-            h1, .btn, .btn-6, .navbar  {
-                font-family: Cubano
-            }
-            
-            body {
-                font-family: Helvetica;
+            h1, h2, h3 {
+                font-family: Cubano;
             }
             .navbar {
                 background-color: #2f45b2;
-                position: fixed;
-                top: 0;
-                width: 100%;
             }
-            .offcanvas{
-                background-color: #e5c526}
-            
             .nav-link-active{
                 color:white;
                 font-size:27px;
+                font-family: Cubano;
             }
-           
-            #VerticalUl {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                width: 30%;
-                height: 100%;
-                position: fixed;
-                overflow:auto; 
-                top: 10%;
-                font-size: 20px
+             li :hover:not(.active) {
+                letter-spacing: 3px;
                 }
             li a {
                 display: block;
@@ -49,23 +31,18 @@
                 text-decoration: none;
                 transition-property: inherit;
                 transition-duration: 0.5s;
+                font-family: Cubano;
             }
-            li :hover:not(.active), .btn:hover {
-                letter-spacing: 3px;
-                }
-            
-            .btn{
-                background-color: #9cadff;
+            .offcanvas{
+                background-color: #e5c526
+            }
+            #Gallery{
+                width: 100%;
+                color: white;
                 transition-property: inherit;
                 transition-duration: 0.5s;
             }
-            
-            
-            .btn-6 {
-                text-decoration: none;
-            }
-            
-          #btn6 {
+            #btn6 {
                 background-color:black;
                 color: white;
                 text-align: center;
@@ -75,10 +52,32 @@
                 transition-property: inherit;
                 transition-duration: 0.5s;
             }
-            #btn6:hover {
-                letter-spacing: 3px;
+            #Gallery:hover, #btn6:hover {
+                letter-spacing: 5px;
             }
            
+            #Title1:hover, #Title3:hover      {
+                transform: rotate(5deg);
+                text-align: center;
+            }
+            
+            #Title2:hover,  #Title4:hover  {
+                transform: rotate(-5deg);
+                text-align: center;
+            }
+           
+            #Title1, #Title2, #Title3, #Title4, #Title5 {
+                background-color: #9cadff;
+                color:#162022;
+                width: 100%;
+                text-align: center;
+                transition-property: inherit;
+                transition-duration: 0.5s;
+            }
+
+            body {
+            font-family: Helvetica
+            }
           @media screen and (min-width: 501px) {
                 h1 {
                     font-size: 70px;
@@ -133,10 +132,10 @@
                                 <a class="nav-link" href="index.html" aria-expanded="false"><h3>Home</h3> </a>
                             </li>
                             <li class="nav-item mx-2">
-                                <a class="nav-link" href="Gallery.html" aria-expanded="false"><h3>Gallery </h3></a>
+                                <a class="nav-link" href="Gallery.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true"><h3>Gallery </h3></a>
                             </li>
                             <li class="nav-item mx-2">
-                                <a class="nav-link-active" href="AboutMe.html" aria-expanded="true"><h3>Contact</h3></a>
+                                <a class="nav-link-active" href="AboutMe.html" aria-expanded="false"><h3>Contact</h3></a>
                             </li>
                         </ul>
                     </div>
@@ -144,26 +143,28 @@
             </div>
         </nav>
 
-        <div style="margin-top:120px">
     <div class="container-fluid">
         <div class="row justify-content-center">
-                <div class="col-xs-6 col-sm-10 col-md-4 col-lg-4 col-xl-3 align-content-end g-4">
+                <div class="col-xs-8 col-sm-8 col-md-4 col-lg-5 col-xl-4 align-content-end g-4">
                     <img src="aboutme.png" width="100%">
                 </div>
-                <div class="col-xs-8 col-sm-10 col-md-7 col-lg-6 col-xl-5 p-2 align-content-center">
-                  <div class="row justify-content-around">
-                    <div class="col-5 p-2 me-4 mb-1 text-start"><a href="https://www.instagram.com/creating_claire_/" class="btn" id="btn1"><h2>Instagram</h2></a>       
-                    </div> 
-                    <div class="col-5 p-2 me-4 mb-1 text-start"><a href="https://www.tiktok.com/@creating_claire_" class="btn" id="btn2"><h2>TikTok</h2></a>
-                    </div>
-                  </div>
-                       
-                    <div class="row justify-content-around">
-                        <div class="col-5 p-2 me-4 mb-1 text-start"><a href="Resume.pdf" class="btn" id="btn3"><h2>Resume</h2></a>
+                <div class="col-xs-8 col-sm-10 col-md-7 col-lg-6 col-xl-5 p-2 align-content-center text-center">
+                     <h1> Contact</h1>
+                  <div class="row">
+                        <div class="col-6 text-start">
+                            <a class="btn" href="https://www.instagram.com/creating_claire_/" id="Title1"><h2>Instagram</h2></a>
+                                <br><br>
+                            <a class="btn" href="https://www.tiktok.com/@creating_claire_" id="Title2"><h2>Tik Tok</h2></a>
                         </div>
-                        <div class="col-5 p-2 me-4 mb-1 text-start"><a href="mailto:clairelucia3@gamil.com"><div class="btn"><h2>Email</h2></div></a>
+                    
+                    
+                        <div class="col-6 text-start">
+                            <a class="btn" href="Resume.pdf" id="Title3"><h2>Resume</h2></a>
+                                <br><br>
+                            <a class="btn" href="mailto:clairelucia3@gamil.com" id="Title4"><h2>Email</h2></a>
                         </div>
                     </div>
+                   
                 </div>
          </div>
         
@@ -177,7 +178,6 @@
                     </div>
             </div>
     </div>
-</div>
     
         
 
@@ -185,7 +185,7 @@
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col" id="btn6">
-                    <a class="btn-6 text-light" href="AboutMe.html" id="bottom"><h1>Let's Work Together</h1></a>
+                    <a class="btn text-light" href="AboutMe.html" id="bottom"><h1>Let's Work Together</h1></a>
                 </div></div></div>
     
         
