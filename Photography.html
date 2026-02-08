@@ -10,21 +10,69 @@
         <link rel="stylesheet" href="https://use.typekit.net/xbk4dlc.css">
         
         <style>
+            
+            /*ffcbcb
+             * ff776e
+             * e5c526
+             * f0abaf
+             * 9cadff*/
+            
+            h1, .btn, .btn-6, .navbar  {
+                font-family: Cubano
+            }
+            
             body {
-                font-family: Cubano;
+                font-family: Helvetica;
             }
             .navbar {
                 background-color: #2f45b2;
+                position: fixed;
+                top: 0;
+                width: 100%;
             }
             .offcanvas{
                 background-color: #e5c526}
-
-            #btn6:hover {
-                letter-spacing: 5px;
-                color: white;
-                text-align: center;
+            
+            .nav-link-active{
+                color:white;
+                font-size:27px;
             }
-            #btn6 {
+           
+            #VerticalUl {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 30%;
+                height: 100%;
+                position: fixed;
+                overflow:auto; 
+                top: 10%;
+                font-size: 20px
+                }
+            li a {
+                display: block;
+                color: black;
+                padding: 8px 16px;
+                text-decoration: none;
+                transition-property: inherit;
+                transition-duration: 0.5s;
+            }
+            li :hover:not(.active), .btn:hover {
+                letter-spacing: 3px;
+                }
+            
+            .btn{
+                background-color: #9cadff;
+                transition-property: inherit;
+                transition-duration: 0.5s;
+            }
+            
+            
+            .btn-6 {
+                text-decoration: none;
+            }
+            
+          #btn6 {
                 background-color:black;
                 color: white;
                 text-align: center;
@@ -34,49 +82,41 @@
                 transition-property: inherit;
                 transition-duration: 0.5s;
             }
-
-             .saying {
-                font-family: Helvetica
-           }
-           
-           @media screen and (min-width: 501px) {
+            #btn6:hover {
+                letter-spacing: 3px;
+            }
+            @media screen and (min-width: 770px) {
+                #Gallery{
+                    font-size: 80px;
+                }
+            }
+            @media screen and (max-width: 769px) {
                 #Gallery {
-                    font-size: 100px;
+                    font-size: 50px;
                 }
             }
-            @media screen and (max-width: 500px) {
-                #Gallery {
-                    font-size: 60px;
+          
+             @media screen and (min-width: 601px) {
+                #bottom {
+                    font-size: 50px;
                 }
             }
-            @media screen and (min-width: 501px) {
-                .title, #bottom {
-                    font-size: 30px; 
+            @media screen and (max-width: 600px) {
+                #bottom {
+                    font-size: 30px;
                 }
             }
-            @media screen and (max-width: 500px) {
-                .title, #bottom {
-                    font-size: 40px;
-                }
-            }
-            @media screen and (max-width: 500px) {
-                .saying {
-                    font-size: 16px;
-                }
-            }
-            @media screen and (min-width: 501px) {
-                .saying {
-                    font-size: 20px;
-                }
-            }
-    </style>
+          
+            
+        </style>
     </head>
-    <body>
- 
-<nav class="navbar sticky-top navbar-dark navbar-expand-xlg">
+    
+     <body>
+         
+        <nav class="navbar sticky-top navbar-dark navbar-expand-md">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"
-                    ><img class="img-fluid object-fit-cover" src="logo.png" alt="logo" width="75px"
+                    ><img class="img-fluid object-fit-cover" src="logo.png" alt="logo" width="80px"
                 /></a>
                 <button
                     class="navbar-toggler"
@@ -97,77 +137,142 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item mx-4">
-                                <a class="nav-link active" aria-current="page" href="index.html"><h3>Home</h3> </a>
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="HorozontalUl">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="index.html" aria-expanded="false"><h3>Home</h3> </a>
                             </li>
-                            <li class="nav-item mx-4">
-                                <a class="nav-link" href="Gallery.html" aria-expanded="false"
-                                    ><h3>Gallery</h3></a
-                                >
+                            <li class="nav-item dropdown mx-2">
+                                <a class="nav-link-active" href="Gallery-Painting.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true"><h3>Gallery </h3></a>
                             </li>
-                            <li class="nav-item mx-4">
-                                <a class="nav-link" href="AboutMe.html"><h3>Contact</h3> </a>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="AboutMe.html" aria-expanded="false"><h3>Contact</h3></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
 
-        <div class="container-fluid text-center">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center"><h1 id="Gallery">UX/UI Design</h1>
-                </div>
-                <div class="col-8 p-2"><h1 class="saying">This section showcases my UX/UI work, including projects built with HTML. Here, you’ll find examples of how I translate ideas into user-friendly layouts that balance clear navigation with engaging design.</h1>
-                </div>
+ <div style="padding:20px">
+<ul class="sidenav mt-5" id="VerticalUl">
+    <li><a class="li-active" href="#top"><h1>Holiday Cards</h1></a></li>
+  <li><a class="li my-3" href="#top">Illustrations</a></li>
+    <li><hr class="line"></li>
+    <li><a class="li my-3" href="#graphics/socialmedia">LSU Card</a></li>
+    <li><hr class="line"></li>
+    <li><a class="li" href="Gallery-Painting.html">Back to Gallery</a></li>
+</ul>
+</div>
+       
+<div class="content">
+   <div style="margin-left:35%; margin-top:88px; padding:1px 16px; height:100%;">
+    
+  <div class="row justify-content-around p-3">
+    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
+      <h1>Illustrations</h1>
+        <p>Inspired by the Starbuck's "Been There" series of mugs, I wanted something playful and personal to the many activities and characteristics of the family. To give some of the objects context, I created a scavenger hunt to be used on the back of the card. They included fun hints and riddles such as "Find the place where summers are better and the water is always cold," hinting to the lake where the family spends their summers. </p>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
+        <img src="DurhamCard25Portfolio.png" width=100%>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
+        <img src="ChristmasCardDurham25back.png" width=100%>
+        </div>
+  </div>
+       <div class="row justify-content-around p-3">
+      
+        <div class="col-sm-6 col-md-6 col-lg-3"><img src="coldwater.png" width=100%></div>
+        <div class="col-sm-6 col-md-6 col-lg-3"><img src="chicken.png" width=100%></div>
+        <div class="col-sm-6 col-md-6 col-lg-3"><img src="love.png" width=100%></div>
+        <div class="col-sm-6 col-md-6 col-lg-3"><img src="dadtree.png" width=100%></div>
+        </div>
+       <div class="row justify-content-around p-3">
+            <div class="col-sm-12 col-md-7 col-lg-6 col-xl-4 p-3">
+            <p>Starbucks released a series of mugs called "Been There." I admired the loose sketch style and harmony of colors. I also admired the concept of the subjects depicted, showing some niche details of a city or location that only locals would be familiar with. Spinning the idea, I designed icons depicting niche details of a family, creating a deeply personal Holiday Card.  </p>
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-6 col-xl-4 p-3">
+            <img src="Starbucksmug.jpg" width=100%>
             </div>
         </div>
-        <div class="container-fluid text-wrap">
-            <div class="row justify-content-center p-5">
-                <div class="col-sm-12 col-lg-5"><img src="mamamirswebsite.png" width="100%">
-                </div>
-                    <div class="col-sm-12 col-lg-5"> <h1 class="title"> Mama Mir's Kitchen
-                        </h1>
-                        <div class="col-12"> <div class="saying"> I was given the opportunity to build a website for a small business that sells meal-prepped food. I had more than a year experience working behind the counter of this business so I understood the business's values and clientele. I wanted to ensure that the website met the unique needs and wants of the customers through clear navigation and tools.
-                        </br> </br> It was important that the website was easy to navigate and understand because convienance was very important to our customers.
-                        </div></div>
-                        <div class="col-12"> <div class="saying"> To ensure this clarity, I included step by step instructions on how to order from the business.
-                        </div></div>
-                <div class="col-12"><img src="mamamirsweb2.png" width="100%"></div>
-                    </div>
-            </div>
-            <div class="row justify-content-center p-5">
-                <div class="col-sm-12 col-lg-5"> <div class="saying"> One of the biggest challenges in building this website was weaving together the many sides of the business; food services, catering, rental opportunities, and employment, into one cohesive experience. To combat this, I made sure all sides of the business remained consistent with the brand, included seperate forms and pages.
-                </br></br> It was also important that the website was directly linked to the system that keeps track of inventory, that way shoppers could see a live view of what is available.
-                </div></div>
-                   <div class="col-sm-12 col-lg-5"> <img src="mamamirswebsite3.png" width="100%"> </div>
-                </div>
+       <hr>
+       
+    <div class="row justify-content-around">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-8 align-content-center">
+        <img src="Molly25CardPortfolio.png" width="100%">
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 p-3 align-content-center">
+        <p>Each card that I create is designed to feel personal and intentional. They often reflect the family's personalities or depict key memories or moments. For example, this card highlights a family announcing they have moved houses. I combined hand illustrations through Pro-Create, and more thorugh Illustrator and Photoshop to achieve each final design.</p>
         </div>
-<div class="container-fluid text-wrap">
-            <div class="row justify-content-center p-5">
-                    <div class="col-sm-12 col-lg-5"> <h1 class="title"> Sam's Hope
-                        </h1>
-                        <div class="col-12"> <div class="saying"> This UX/UI project was created for an animal-focused non-profit called Sam's Hope with the goal of making information more accessible and encouraging user engagement. Working primarily in Figma, I focused on designing clear navigation, thoughtful layouts, and an interface that balances eye-catching colors with usability. The final design prioritizes ease of use while reflecting the organization’s mission of care, connection, and community impact.
-                        </div></div>
-                        <div class="col-12"><img src="sitemapsam.png" width="100%">
-                    </div></div>
-                         <div class="col-sm-12 col-lg-5"><img src="samshome.png" width="100%">
-                    </div>
-            
-            <div class="row justify-content-center p-5">
-                <div class="col-sm-12 col-lg-5"> <div class="saying"> I wanted the website to feel deepl personal to draw viewers to donate towards the non-profit. One challenge was providing the multitude of information and history without overwhelming the viewer with too many words. To combat this I made an interactive experience that reveals bits of information as the viewer moves through the page.
-                                                </div>
-                </div>
-                   <div class="col-sm-12 col-lg-5"> <img src="samsux2.png" width="100%"> </div>
-                </div>
+    </div>
+    <div class="row justify-content-around">
+        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-6">
+        <img src="Abby25CardPortfolio.png" width="100%">
         </div>
-        
-        <div class="container-fluid text-center">
+        <div class="col-sm-12 col-md-10 col-lg-4 col-xl-4 p-3 align-content-center">
+            <p>Combining chaos with classiness, this client wished for a sweet Holiday scene that captures the craziness of the season. Some other details to add was their family dog that recently passed away and their new kitten that the young girl was obsessed with!</p>
+            <img src="abby.png" width="100%">
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-6 p-3 align-content-center">
+            <img src="Julia25CardPortfolio.png" width=100%>
+        </div>
+        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-6 p-3 align-content-center">
+            <img src="Knepleys.png" width=100%>
+        </div>
+        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-6 p-3 align-content-center">
+            <img src="AuntJenn.jpg" width=100%>
+        </div>
+        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-6 p-3 align-content-center">
+            <img src="ErinCard25Portfolio.jpg" width=100%>
+        </div>
+    </div>
+    
+   
+    <br>
+    <div class= "row" id="LSUCard"><hr></div>
+    
+<div class="container-fluid">
+    <br><br><br><br>
+    <div class="row justify-content-around">
+    <div class="col-sm-12 col-md-10 col-lg-6 col-xl-6">
+      <h1>La Salle University Holiday Card</h1>
+        <p>I was given the honor of creating La Salle's Holiday Card. I was asked to create a water color image of the grotto, a central location on campus. After some thought, I was inspired by an image I took of the grotto early in the morning. The sun was peaking through the trees behind and I thought about its resemblence to the holiday season. Both promise warmth and a new beginning so I made it the central focus of the design. I used a variety of digital brushes to obtain the watercolor effect and hand illustrated it using an Ipad.</p>
+        </div>
+    <div class="col-sm-12 col-md-10 col-lg-6 col-xl-4 col-xxl-3 p-3">
+        <img src="LSUCard25Portfolio.png" width="100%">
+    </div>
+  </div>
+    <div class="row justify-content-around">
+      <div class="col-sm-6 col-md-10 col-lg-6 col-xl-6 align-content-center p-3">
+        <img src="LSUChristmascloseup.jpg" width="100%">
+      </div>
+      <div class="col-sm-6 col-md-12 col-lg-6  p-5 align-content-center">
+        <p>The Grotto is a sacred place on campus where the the statue of the Virgin Mary can be seeing looking down on students. When illlustrating the image, I created a stark contrast between her figure and the cove behind her.  </p>
+        </div>
+    </div>
+  <div class="row justify-content-around">
+      <div class="col-sm-12 col-md-10 col-lg-6 col-xl-6 align-content-center p-3">
+        <p>I took multiple pictures to use as a reference when recreating this scene. I imagened different angles such as from the benches that students sit at, or square across from the grotto. I decided on this angle because it placed the sunlight directly in the center of the composition. The burst of sun was only visible to the eye so I photoshopped the burst of light. One challenge that I faced was that the image was taken in the early September weeks when the weather was warm and everything was green. When illustrating, I added lots of snow and coolness to create a cold wintery scene. </p>
+        <a class="btn text-dark" href="https://www.lasalle.edu/news/unwrapping-la-salles-christmas-card/" id="buttonlasalle"> Read more in La Salle Article </a>
+      </div>
+    <div class="col-sm-12 col-md-10 col-lg-6 col-xl-4 col-xxl-5 p-3">
+        <img src="originalimage.jpeg" width="100%">
+    </div>
+  </div>
+</div>
+
+   <br>
+    
+    <div class="container-fluid text-center">
             <div class="row">
                 <div class="col" id="btn6">
-                    <a class="btn text-light" href="AboutMe.html" id="bottom">Let's Work Together</a>
-                </div></div></div>
-
+                    <a class="btn-6 text-light" href="AboutMe.html" id="bottom">Let's Work Together</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
         
     </body>
 </html>
