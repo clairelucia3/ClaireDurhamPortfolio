@@ -10,14 +10,49 @@
         <link rel="stylesheet" href="https://use.typekit.net/xbk4dlc.css">
         
         <style>
-            body {
-                font-family: Cubano;
+            
+            /*ffcbcb
+             * ff776e
+             * e5c526
+             * f0abaf
+             * 9cadff*/
+            
+            h1, .btn, .btn-6, .navbar  {
+                font-family: Cubano
             }
+            
+            body {
+                font-family: Helvetica;
+            }
+            
+            .content {
+                margin-left:35%; 
+                margin-top:88px; 
+                padding:1px 16px; 
+                height:100%;
+            }
+            
             .navbar {
                 background-color: #2f45b2;
+                position: fixed;
+                top: 0;
+                width: 100%;
             }
-         .offcanvas{
-                background-color: #e5c526}
+            .offcanvas  {
+                background-color: #e5c526
+            }
+            
+            .btn{
+                background-color: #9cadff;
+                transition-property: inherit;
+                transition-duration: 0.5s;
+            }
+            
+            
+            .btn-6 {
+                text-decoration: none;
+            }
+            
           #btn6 {
                 background-color:black;
                 color: white;
@@ -29,94 +64,75 @@
                 transition-duration: 0.5s;
             }
             #btn6:hover {
-                letter-spacing: 5px;
+                letter-spacing: 3px;
             }
-            @media screen and (min-width: 501px) {
+
+            .nav-link-active{
+                color:white;
+                font-size:27px;
+            }
+           
+            #VerticalUl {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 30%;
+                height: 100%;
+                position: fixed;
+                overflow:auto; 
+                top: 10%;
+                font-size: 20px;
+                }
+    
+            .MamaMirs, .OlneyOutlaws, .HolidayCards, .FineArt, .UDCA {
+                scroll-padding-top: 100px;
+            }
+            
+            
+            li a, a {
+                display: block;
+                color: black;
+                padding: 8px 16px;
+                text-decoration: none;
+                transition-property: inherit;
+                transition-duration: 0.5s;
+            }
+            li :hover:not(.active), .btn-6:hover, .btn:hover {
+                letter-spacing: 3px;
+                }
+            
+            @media screen and (min-width: 770px) {
+                #Gallery{
+                    font-size: 120px;
+                }
+            }
+            @media screen and (max-width: 769px) {
                 #Gallery {
-                    font-size: 100px;
-                }
-            }
-            @media screen and (max-width: 500px) {
-                #Gallery {
-                    font-size: 60px;
-                }
-            }
-            @media screen and (max-width: 600px) {
-                #bottom, #saying {
-                    font-size: 15px;
-                }
-            }
-            @media screen and (min-width: 601px) {
-                #bottom, #saying {
-                    font-size: 20px;
+                    font-size: 50px;
                 }
             }
           
-             #rig {
-                max-width:90%;
-                margin:0 auto; 
-                padding:0;
-                font-size:0;
-                list-style:none;
+             @media screen and (min-width: 601px) {
+                #bottom {
+                    font-size: 50px;
+                }
             }
-            #rig li {
-                display:inline-block;
-                *display: inline;
-                width:50%;
-                vertical-align:middle;
-                box-sizing:border-box;
-                margin:0px;
-                padding:5px;
+            @media screen and (max-width: 600px) {
+                #bottom {
+                    font-size: 30px;
+                }
             }
-            .rig-cell {
-                display:block;
-                position: relative;
-                overflow:hidden;
-                padding:5px;
-            }
-            .rig-img {
-                opacity: 20%;
-                display:block;
-                width: 100%;
-                height: auto;
-                border:none;
-                transform:scale(1);
-                transition:all 0.5s;
-            }
-            #rig li:hover .rig-img {
-                transform:scale(1.05);
-                opacity:100%;
-            }
-            #rig li:hover .rig-text {
-                opacity:1;
-                letter-spacing: 1px;
-                color: black;
-                background-color:#e5c526
-            }
-            .rig-text {
-                color:black;
-                display:block;
-                padding:0 10px;
-                box-sizing:border-box;
-                position:absolute;
-                left:0;
-                width:100%;
-                text-align:center;
-                font-size:5vw;
-                font-family:cubano;
-                top:40%;
-                opacity:100%;
-                transition:all .3s;
-            }
+            
+            
 
         </style>
     </head>
     
      <body>
-        <nav class="navbar sticky-top navbar-dark navbar-expand-xlg">
+         <nav class="navbar sticky-top navbar-dark navbar-expand-md">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"
-                    ><img class="img-fluid object-fit-cover" src="logo.png" alt="logo" width="75px"
+                    ><img class="img-fluid object-fit-cover" src="logo.png" alt="logo" width="80px"
                 /></a>
                 <button
                     class="navbar-toggler"
@@ -137,80 +153,159 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item mx-4">
-                                <a class="nav-link active" aria-current="page" href="index.html"><h3>Home</h3> </a>
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="HorozontalUl">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="index.html" aria-expanded="false"><h3>Home</h3> </a>
                             </li>
-                            <li class="nav-item mx-4">
-                                <a class="nav-link" href="Gallery.html" aria-expanded="false"
-                                    ><h3>Gallery</h3></a
-                                >
+                            <li class="nav-item mx-2">
+                                <a class="nav-link-active" href="Gallery.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true"><h3>Gallery </h3></a>
                             </li>
-                            <li class="nav-item mx-4">
-                                <a class="nav-link" href="AboutMe.html"><h3>Contact</h3> </a>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="AboutMe.html" aria-expanded="false"><h3>Contact</h3></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
-    
-<div class="container-fluid">
-    <br/>
-        <div class="row justify-content-center">
-            <div class="col-12 text-center"><h1 id="Gallery">Gallery</h1>
-            </div>
-    <br/>
-    <ul id="rig">
-             <li>
-                <a class="rig-cell" href="ChristmasCards25.html">
-                    <img class="rig-img" src="abby.png">
-                    <span class="rig-overlay"></span>
-                    <span class="rig-text">Illustrations</span>
-                </a>
-            </li>
-            <li>
-                <a class="rig-cell" href="ChristmasCards.html">
-                    <img class="rig-img" src="BenPioneerPainter.png">
-                    <span class="rig-overlay"></span>
-                    <span class="rig-text">Brand Design</span>
-                </a>
-            </li>
-           <li>
-                <a class="rig-cell" href="Photography.html">
-                    <img class="rig-img" src="UI.png">
-                    <span class="rig-overlay"></span>
-                    <span class="rig-text">UX/UI Design</span>
-                </a>
-            </li>
-            <li>
-                <a class="rig-cell" href="SocialMedia.html">
-                    <img class="rig-img" src="SocialMedia.png">
-                    <span class="rig-overlay"></span>
-                    <span class="rig-text">Social Media</span>
-                </a>
-            </li>
-            <li>
-                <a class="rig-cell" href="Paintings.html">
-                    <img class="rig-img" src="Grandma.png">
-        
-                    <span class="rig-text">Fine Art</span>
-                </a>
-            </li>
-       </ul>
-          
-    </div>
 
-             <br/><br/>
+    <div style="padding:20px">
+<ul class="sidenav mt-5" id="VerticalUl">
+    <li><a class="li-active" href="#top"><h1>Gallery</h1></a></li>
+    <li><a class="li my-3" href="#top">Mama Mirs Kitchen</a></li>
+    <li><hr class="line"></li>
+    <li><a class="li my-3" href="#OlneyOutlaws">Olney Outlaws</a></li>
+    <li><hr class="line"></li>
+    <li><a class="li my-3" href="#HolidayCards">Holiday Cards</a></li>
+    <li><hr class="line"></li>
+    <li><a class="li" href="#FineArt">Fine Art/ Murals</a></li>
+    <li><hr class="line"></li>
+    <!--<li><a class="li" href="#UDCA">UDCA Association</a></li>-->
+</ul>
+</div>
+         
+         
+<div class="content">
+
+<div class="container" id="MamaMirsKitchen">
+<a class= btn1 href="ChristmasCards.html">
+  <div class="row justify-content-around">
+    <div class="col-sm-12 col-md-8 col-lg-5 col-xl-6 p-3">
+      <h1>Mama Mirs Kitchen</h1>
+        <p>I designed and executed all marketing efforts for catering, single-serve meals, freezer meals, and fresh meals. I also tailored social media ads for diverse audiences (families, coaches, the elderly, and professionals). I also developed a marketing calendar, a website, and a consistent brand voice, including logos, and a full branding guideline with graphic templates to be used/posted to social media.</p>
+        <div class="btn">Brand Design</div>
+        <br><br>
+        <div class="btn">Graphics/Social Media</div>
+        <br><br>
+        <div class="btn">Website Design</div>
+    </div>
+    <div class="col-sm-12 col-md-8 col-lg-6 col-xl-5">
+        <img src="Profileimage-48.png" width="100%">
+    </div>
+  </div>
+</a>
+</div>
     
-        <div class="container-fluid text-center">
-            <div class="row">
+    <br>
+    <hr>
+    <br>
+    
+<div class="container" id="OlneyOutlaws">
+<a class= btn2 href="OlneyOutlaws.html">
+    <div class="row justify-content-around">
+      <div class="col-sm-12 col-md-8 col-lg-5 col-xl-6 p-3" id="outlaws">
+        <h1>Olney Outlaws</h1>
+            <p>I designed engaging graphics, logos, and content to strengthen the Olney Outlaws’ brand identity. I also managed a social media calendar to promote games, events, and student support. </p>
+            
+            <div class="btn"> Brand Design</div>
+          <br><br>
+            <div class="btn">Graphics/Social Media</div>
+      </div>
+      <div class="ccol-sm-12 col-md-8 col-lg-6 col-xl-5">
+            <img src="OlneyOutlawone.png" width="100%">
+      </div>
+  </div>
+</a>
+</div>
+    
+    
+    <br>
+    <hr>
+    <br>
+    
+<div class="container" id="HolidayCards">
+<a class= btn3 href="Photography.html">
+     <div class="row justify-content-around" id="Illustrations">
+      <div class="col-sm-12 col-md-8 col-lg-5 p-3">
+        <h1>Custom Holiday Cards</h1>
+            <p>This year’s custom Holiday cards were designed to feel personal and intentional, often reflecting each family’s personality or marking meaningful moments. Each card was hand-illustrated with the goal of turning a holiday greeting into a keepsake. I was honored to creat the La Salle's Holiday Card as well!</p>
+          <div class="btn">Illustrations</div>
+           <br><br>
+         <div class="btn">La Salle Card</div>
+      </div>
+      <div class="col-sm-12 col-md-8 col-lg-6 col-xl-5">
+            <img src="DurhamCard25Portfolio.png" width="100%">
+      </div>
+  </div>
+</a>
+</div>
+    
+    <br>
+    <hr>
+    <br>
+    
+<div class="container" id="FineArt">
+<a class= btn4 href="Paintings.html">
+     <div class="row justify-content-around" id="fineart">
+      <div class="col-sm-12 col-md-8 col-lg-5 p-3">
+        <h1>Fine Art</h1>
+            <p>I take on fine art commissions ranging from intricate acrylic family portraits to landscapes. My work extends beyond canvas, with experience painting a large-scale mural and experimenting on unconventional surfaces like glass and stone to bring unique visions to life.</p>
+            <div class="btn">Portraits/Landscapes</div>
+           <br><br>
+          <div class="btn">Murals</div>
+      </div>
+      <div class="col-sm-12 col-md-8 col-lg-6 col-xl-5">
+            <img src="Sunflower.png" width="100%">
+      </div>
+  </div>
+</a>
+</div>
+    
+    <br>
+    <hr>
+    <br>
+
+    <!--
+<div class="container" id="UDCA"></div>
+<a class=btn5 href="Mural.html">
+     <div class="row justify-content-around">
+      <div class="col-sm-12 col-md-8 col-lg-5 p-3">
+        <h1>Upper Dublin Chinese Association</h1>
+            <p>I collaborated with UDCA, a Philly non-profit organization, to provide a rebrand that included update logos and website.</p>
+          <div class="btn">Brand Design</div>
+           <br><br>
+          <div class="btn">Website Design</div>
+      </div>
+      <div class="col-sm-12 col-md-8 col-lg-6 col-xl-5">
+            <img src="UDCAlogoV2-27.jpg" width="100%">
+      </div>
+  </div>
+</a>
+</div>
+        -->
+    
+
+    
+         <br><br><br>
+         
+    <div class="container-fluid text-center">
+             <div class="row">
                 <div class="col" id="btn6">
-                    <a class="btn text-light" href="AboutMe.html" id="bottom">Let's Work Together</a>
+                    <a class="btn-6 text-light" href="AboutMe.html" id="bottom">Let's Work Together</a>
                 </div>
             </div>
-           
-        </div>
-    
+    </div>
+</div>  
     </body>
 </html>
 <script
