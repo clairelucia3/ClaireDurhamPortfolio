@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://use.typekit.net/xbk4dlc.css">
         
         <style>
-            h1 {
+            h1, h3 {
                 font-family: Cubano;
             }
             .navbar {
@@ -106,10 +106,10 @@
     </head>
 
     <body>
-        <nav class="navbar sticky-top navbar-dark navbar-expand-xlg">
+       <nav class="navbar sticky-top navbar-dark navbar-expand-md">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"
-                    ><img class="img-fluid object-fit-cover" src="logo.png" alt="logo" width="75px"
+                    ><img class="img-fluid object-fit-cover" src="logo.png" alt="logo" width="80px"
                 /></a>
                 <button
                     class="navbar-toggler"
@@ -130,17 +130,16 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item mx-4">
-                                <a class="nav-link active" aria-current="page" href="index.html"><h3>Home</h3> </a>
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="HorozontalUl">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link-active" href="index.html" aria-expanded="false"><h3>Home</h3> </a>
                             </li>
-                            <li class="nav-item mx-4">
-                                <a class="nav-link" href="Gallery.html" aria-expanded="false"
-                                    ><h3>Gallery</h3></a
-                                >
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="Gallery.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true"><h3>Gallery </h3></a>
                             </li>
-                            <li class="nav-item mx-4">
-                                <a class="nav-link" href="AboutMe.html"><h3>Contact</h3> </a>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="AboutMe.html" aria-expanded="false"><h3>Contact</h3></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
