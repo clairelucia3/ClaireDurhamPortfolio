@@ -10,19 +10,69 @@
         <link rel="stylesheet" href="https://use.typekit.net/xbk4dlc.css">
         
         <style>
+            
+            /*ffcbcb
+             * ff776e
+             * e5c526
+             * f0abaf
+             * 9cadff*/
+            
+            h1, .btn, .btn-6, .navbar  {
+                font-family: Cubano
+            }
+            
             body {
-                font-family: Cubano;
+                font-family: Helvetica;
             }
             .navbar {
                 background-color: #2f45b2;
+                position: fixed;
+                top: 0;
+                width: 100%;
             }
             .offcanvas{
                 background-color: #e5c526}
-
-            #btn6:hover {
-                letter-spacing: 5px;
+            
+            .nav-link-active{
+                color:white;
+                font-size:27px;
             }
-            #btn6 {
+           
+            #VerticalUl {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 30%;
+                height: 100%;
+                position: fixed;
+                overflow:auto; 
+                top: 10%;
+                font-size: 20px
+                }
+            li a {
+                display: block;
+                color: black;
+                padding: 8px 16px;
+                text-decoration: none;
+                transition-property: inherit;
+                transition-duration: 0.5s;
+            }
+            li :hover:not(.active), .btn:hover {
+                letter-spacing: 3px;
+                }
+            
+            .btn{
+                background-color: #9cadff;
+                transition-property: inherit;
+                transition-duration: 0.5s;
+            }
+            
+            
+            .btn-6 {
+                text-decoration: none;
+            }
+            
+          #btn6 {
                 background-color:black;
                 color: white;
                 text-align: center;
@@ -32,57 +82,41 @@
                 transition-property: inherit;
                 transition-duration: 0.5s;
             }
-            #buttonlasalle:hover {
-               letter-spacing: 5px;
+            #btn6:hover {
+                letter-spacing: 3px;
             }
-           .saying {
-                font-family: Helvetica
-           }
-            #buttonlasalle {
-                background-color: #e5c526;
-                text-align: center;
-                width: 100%;
-                transition-property: inherit;
-                transition-duration: 0.5s;
-            }
-           @media screen and (min-width: 501px) {
-                #Gallery {
-                    font-size: 100px;
+            @media screen and (min-width: 770px) {
+                #Gallery{
+                    font-size: 80px;
                 }
             }
-            @media screen and (max-width: 500px) {
+            @media screen and (max-width: 769px) {
                 #Gallery {
-                    font-size: 60px;
+                    font-size: 50px;
                 }
             }
-            @media screen and (max-width: 500px) {
-                #bottom, .title, #buttonlasalle {
+          
+             @media screen and (min-width: 601px) {
+                #bottom {
+                    font-size: 50px;
+                }
+            }
+            @media screen and (max-width: 600px) {
+                #bottom {
                     font-size: 30px;
                 }
             }
-            @media screen and (min-width: 501px) {
-                #bottom, .title, #buttonlasalle {
-                    font-size: 40px;
-                }
-            }
-             @media screen and (max-width: 500px) {
-                .saying {
-                    font-size: 15px;
-                }
-            }
-            @media screen and (min-width: 501px) {
-                .saying {
-                    font-size: 20px;
-                }
-            }
-    </style>
+          
+            
+        </style>
     </head>
-    <body>
- 
-<nav class="navbar sticky-top navbar-dark navbar-expand-xlg">
+    
+     <body>
+         
+        <nav class="navbar sticky-top navbar-dark navbar-expand-md">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"
-                    ><img class="img-fluid object-fit-cover" src="logo.png" alt="logo" width="75px"
+                    ><img class="img-fluid object-fit-cover" src="logo.png" alt="logo" width="80px"
                 /></a>
                 <button
                     class="navbar-toggler"
@@ -103,70 +137,71 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item mx-4">
-                                <a class="nav-link" href="index"><h3>Home</h3> </a>
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="HorozontalUl">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="index.html" aria-expanded="false"><h3>Home</h3> </a>
                             </li>
-                            <li class="nav-item mx-4">
-                                <a class="nav-link" aria-current="page" href="Gallery.html"><h3>Gallery</h3></a
-                                >
+                            <li class="nav-item dropdown mx-2">
+                                <a class="nav-link-active" href="Gallery.html" aria-expanded="true"><h3>Gallery </h3></a>
                             </li>
-                            <li class="nav-item mx-4">
-                                <a class="nav-link" href="AboutMe.html"><h3>Contact</h3> </a>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="AboutMe.html" aria-expanded="false"><h3>Contact</h3></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
 
-    <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center"><h1 id="Gallery">Illustrations</h1>
-                </div>
-            <div class="row justify-content-center">
-                <div class="col-sm-12 col-md-6 col-lg-6 text-center"><img src="DurhamCard25Portfolio.png" width="100%">
-                </div>
-                <div class="col-sm-8 col-lg-6 align-self-center p-2"> <div class="title"> Custom Christmas Cards </div>
-                <div class="col"><div class="saying"> Inspired by the Starbuck's "Been There" series of mugs, I wanted something playful and reflective of the many activities and characteristics of my family. To give some of the objects context, I created a scavenger hunt to be used on the back of the card. They included fun hints and riddles such as "Find the place where summers are better and the water is always "cold.” </br> Here are some details:</h1>
-                    </div></div>
-                    <div class="row justify-content-around">
-                        <div class="col-5"><img src="coldwater.png" width="75%"></div>
-                        <div class="col-5"><img src="dadtree.png" width="75%"></div>
-                        <div class="col-5"><img src="chicken.png" width="75%"></div>
-                        <div class="col-5"><img src="love.png" width="75%"></div>
-                    </div>
-            </div>
-            <div class="row justify-content-center p-2">
-                <div class="col-8"> <div class="title"> Custom Christmas Cards
-                    </div>
-                    <div class="col"> <div class="saying"> This year’s custom Christmas cards were designed to feel personal and intentional, often reflecting each family’s personality or marking meaningful moments. Each card was hand-illustrated with the goal of turning a holiday greeting into a keepsake. 
-                    </div></div>
-                </div>
-            </div>
-            <div class="row justify-content-around p-5">
-                <div class="col-sm-12 col-md-6 col-lg-6"><img src="Julia25CardPortfolio.png" width="100%"></div>
-                <div class="col-sm-12 col-md-6 col-lg-6"><img src="Abby25CardPortfolio.png" width="100%"></div>
-                <div class="col-sm-12 col-md-6 col-lg-5"><img src="ErinCard25Portfolio.png" width="100%"></div>
-                <div class="col-sm-12 col-md-8 col-lg-7"><img src="Molly25CardPortfolio.png" width="100%"></div>
-            </div>
-            <div class="row align-items-center p-3">
-                <div class="col-sm-12 col-md-6 col-lg-6"><img src="LSUCard25Portfolio.png" width="100%"></div>
-                <div class="col"> <div class="title"> La Salle University Holiday Card</div>
-                </br>
-                    <div class="saying"> I was given the honor of creating La Salle's Holiday Card. I was asked to create a water color image of the grotto, a statue that is central to the campus. After some thought, I was inspired by an image I took of the grotto early in the morning. The sun was peaking through the trees behind and I thought about its resemblence to the holiday season. Both promise warmth and a new beginning so I made it the central focus of the design. I used a variety of digital brushes to obtain the watercolor effect and hand illustrated it using an Ipad. 
-                        </div> <div class="row justify-content-center">
-                        </br>
-                            <div class="col-12 text-center gy-3"> <a class="btn text-dark" href="https://www.lasalle.edu/news/unwrapping-la-salles-christmas-card/" id="buttonlasalle"> Read more in La Salle Article </a> </div>
-                        </div>
-                </div>
-             </div> 
-        
-        
-        <div class="container-fluid text-center">
+ <div style="padding:20px">
+<ul class="sidenav mt-5" id="VerticalUl">
+    <li><a class="li-active" href="#top"><h1>Anthro</h1></a></li>
+  <li><a class="li my-3" href="#top">Email Design</a></li>
+    <li><hr class="line"></li>
+    <li><a class="li" href="Gallery.html">Back to Gallery</a></li>
+</ul>
+</div>
+       
+<div class="content">
+   <div style="margin-left:35%; margin-top:88px; padding:1px 16px; height:100%;">
+    
+  <div class="row justify-content-around p-3">
+    <div class="col-sm-12 col-md-12 col-lg-5">
+      <h1>Anthro email </h1>
+      <p>When I think of Anthropologie, I think of self-expression, individuality, and authenticity. It isn’t just clothes or decor, but the people who bring it to life. I believe this is reflected in the name of Anthropologie. I wanted this email newsletter to feel deeply personal.</p>
+      <p>An inspiration of mine came from the ‘25/25 Fanatics video, where Victor Wembanyama introduces the NBA City-Edition Jerseys. In the video, he spins the narrative and puts ownership of the jersey in the hands of viewers. I wanted to convey a similiar message in the statement about Anthropologies inspiration. I wanted viewers to feel like part of the brand.</p>
+      <p>Playing along side Anthropologie's nostalgic and creative side, I transformed clothing into paper doll cutouts, a memorable childhood craft that I and many others share.</p>
+      <p>Another characteristic that I wanted to evoke was Anthropologie's playfulness. In the section featuring Home and Furniture, I wanted to make viewers laugh and feel good.
+      <p>Usually when someone says you "look great in something," they are referring to clothes but viewers are met with a display of mirrors instead. I included a tag raeding #AReflectionOfYou, calling viewers to post a mirror selfie in their Anthropologie mirror.</p>
+      <p>Lastly, I wanted to play with colors and textures while keeping it all legible. Both bold and delicate, Anthropologie's use of fun colors and whimsical subjects have always inspired me.</p>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-5">
+        <img src="AnthropologieEmailNewsletter.png" width="100%">
+      </div>
+    </div>
+       
+    <div class="row justify-content-around p-3">
+        <div class="col-sm-6 col-md-6 col-lg-3"><img src="anthro1.png" width=100%></div>
+        <div class="col-sm-6 col-md-6 col-lg-3"><img src="anthro2.png" width=100%></div>
+        <div class="col-sm-6 col-md-6 col-lg-3"><img src="anthro3.png" width=100%></div>
+        <div class="col-sm-6 col-md-6 col-lg-3"><img src="anthro4.png" width=100%></div>
+    </div>
+    
+   
+    
+
+   <br>
+        </div>
+    
+    <div class="container-fluid text-center">
             <div class="row">
                 <div class="col" id="btn6">
-                    <a class="btn text-light" href="AboutMe.html" id="bottom">Let's Work Together</a>
-                </div></div></div>
+                    <a class="btn-6 text-light" href="AboutMe.html" id="bottom">Let's Work Together</a>
+                </div>
+            </div>
+        </div>
+        </div>
+   
         
     </body>
 </html>
