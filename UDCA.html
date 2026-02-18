@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="https://use.typekit.net/xbk4dlc.css">
+        
+        <style>
+            
+            /*ffcbcb
+             * ff776e
+             * e5c526
+             * f0abaf
+             * 9cadff*/
+            
+            h1, .btn, .btn-6, .navbar  {
+                font-family: Cubano
+            }
+            
+            body {
+                font-family: Helvetica;
+            }
+            .navbar {
+                background-color: #2f45b2;
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            .offcanvas{
+                background-color: #e5c526}
+            
+            .nav-link-active{
+                color:white;
+                font-size:27px;
+            }
+           
+            #VerticalUl {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 30%;
+                height: 100%;
+                position: fixed;
+                overflow:auto; 
+                top: 10%;
+                font-size: 20px
+                }
+            li a {
+                display: block;
+                color: black;
+                padding: 8px 16px;
+                text-decoration: none;
+                transition-property: inherit;
+                transition-duration: 0.5s;
+            }
+            li :hover:not(.active), .btn:hover {
+                letter-spacing: 3px;
+                }
+            
+            .btn{
+                background-color: #9cadff;
+                transition-property: inherit;
+                transition-duration: 0.5s;
+            }
+            
+            
+            .btn-6 {
+                text-decoration: none;
+            }
+            
+          #btn6 {
+                background-color:black;
+                color: white;
+                text-align: center;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                width: 100%;
+                transition-property: inherit;
+                transition-duration: 0.5s;
+            }
+            #btn6:hover {
+                letter-spacing: 3px;
+            }
+            @media screen and (min-width: 770px) {
+                #Gallery{
+                    font-size: 80px;
+                }
+            }
+            @media screen and (max-width: 769px) {
+                #Gallery {
+                    font-size: 50px;
+                }
+            }
+          
+             @media screen and (min-width: 601px) {
+                #bottom {
+                    font-size: 50px;
+                }
+            }
+            @media screen and (max-width: 600px) {
+                #bottom {
+                    font-size: 30px;
+                }
+            }
+          
+            
+        </style>
+    </head>
+    
+     <body>
+         
+        <nav class="navbar sticky-top navbar-dark navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"
+                    ><img class="img-fluid object-fit-cover" src="logo.png" alt="logo" width="80px"
+                /></a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="offcanvas offcanvas-end"
+                    tabindex="1"
+                    id="offcanvasNavbar"
+                    arialabelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="HorozontalUl">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="index.html" aria-expanded="false"><h3>Home</h3> </a>
+                            </li>
+                            <li class="nav-item dropdown mx-2">
+                                <a class="nav-link-active" href="Gallery.html" aria-expanded="true"><h3>Gallery </h3></a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="AboutMe.html" aria-expanded="false"><h3>Contact</h3></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+ <div style="padding:20px">
+<ul class="sidenav mt-5" id="VerticalUl">
+    <li><a class="li-active" href="#top"><h1>UDCA</h1></a></li>
+  <li><a class="li my-3" href="#top">Logo/Brand Design</a></li>
+    <li><hr class="line"></li>
+    <li><a class="li" href="Gallery.html">Back to Gallery</a></li>
+</ul>
+</div>
+       
+<div class="content">
+   <div style="margin-left:35%; margin-top:88px; padding:1px 16px; height:100%;">
+<div class="container-fluid">
+  <div class="row justify-content-around p-3">
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-5">
+      <h1>UDCA Redesign</h1>
+      <p>For the Upper Dublin Chinese American Association, I developed a refreshed visual identity that honors cultural heritage while presenting a modern, cohesive presence for the organization. The redesign draws inspiration from traditional Chinese design elements, particularly the use of geometric shapes.</p>
+      <p>The color palette incorporates classic Chinese hues—rich reds symbolizing prosperity and joy, and complementary gold tones representing good fortune and strength. These colors were intentionally chosen to reflect cultural pride and community celebration while maintaining a bold, contemporary look.</p>
+      <p>It was important to the organization to include the Chinese Character, "华” or "Huá." This is an abbreviation for China and is commonly associated with Chinese culture and identity. </p>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-10 col-xl-6">
+        <img src="UDCALogo1.png" width="100%">
+      </div>
+    </div>
+       <div class="row justify-content-around p-3">
+            <div class="col-sm-12 col-md-12 col-lg-10 col-xl-6">
+        <img src="UDCALogo2.png" width="100%">
+            </div>
+           <div class="col-sm-12 col-md-12 col-lg-10 col-xl-6">
+        <img src="UDCALogo3.png" width="100%">
+           </div>
+       </div>
+       
+    <div class="row justify-content-around">
+        <div class="col-sm-12 col-md-12 col-lg-10 col-xl-5">
+            <p>I am currently working on the organization's website redesign and illustrated the icons below to be used. They will represent the About, Events, Awards, and Fundraising sections of the site. I am experimenting with incoorporating the small details of the log as well as the primary color palette.</p>
+        </div>
+        <div class="col-sm-12 col-md-10 col-lg-10 col-xl-6"><img src="UDCALogo4.png" width=100%></div>
+    </div>
+    
+    <div class="row justify-content-around">
+        <div class="col-sm-12 col-md-12 col-lg-10 col-xl-5 align-content-center">
+            <p>I was greatly inspired by these small geometric shapes that almost resembled traditinoal Chinese seal marks or stamps. I pulled colors from these shapes and images like ones seen in the middle of the Mood Board. I wanted the logo to appear clean and bold. </p>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-10 col-xl-5"><img src="UDCAMoodBoard.png" width=100%></div>
+    </div>
+    <div class="row justify-content-around">
+        <div class="col-sm-12 col-md-12 col-lg-10 col-xl-7"><img src="UDCALogoOptions.jpg" width=100%></div>
+        <div class="col-sm-12 col-md-12 col-lg-10 col-xl-5 align-content-center">
+            <p>I developed four distinct logo directions for the client to choose from to explore varying balances between tradition and modernity.</p>
+            <p>The top two options lean more traditional in their approach. Both draw heavily from the stamps, incorporating circular framing, ornamental edge detailing, and symmetrical composition. These directions emphasize heritage and cultural continuity, with the Chinese character “华” remaining central to the design. The surrounding typography reinforces the organization’s full name, creating an identity that feels rooted in tradition. </p>
+            <p>In contrast, the bottom two options take a more modern, simplified approach. These marks reduce visual complexity and focus on bold and clean negative space. Option three integrates the initials “UDCA” into a structured, quadrant-based layout inspired by Chinese seal marks, while option four centers the Chinese character. These directions prioritize contemporary appeal, making them well-suited for younger viewers and modern applications.</p>
+            <p>Presenting both traditional and modern directions allowed the organization to consider how they wanted to position themselves.</p>
+        </div>
+    </div>
+</div>
+    
+       
+   
+    
+
+   <br>
+        </div>
+    
+    <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col" id="btn6">
+                    <a class="btn-6 text-light" href="AboutMe.html" id="bottom">Let's Work Together</a>
+                </div>
+            </div>
+        </div>
+        </div>
+   
+        
+    </body>
+</html>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
